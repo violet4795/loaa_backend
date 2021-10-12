@@ -10,8 +10,13 @@ import loaa_backend.model.Dungeon;
 @RestController
 public class LoaaController {
 
+	@GetMapping("/")
+	public String home() {
+		return "HELLO WORLD";//new Dungeon();
+	}
+
 	@GetMapping("/dungeonList")
 	public Dungeon greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return new Dungeon();
+		return new Dungeon("aa11", "aab2", "aa22");
 	}
 }
