@@ -1,0 +1,12 @@
+server:
+  port: 8081
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/loaa?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: ENC(vqikz+EbB/hE9jIMm6AHeg==)
+    password: ENC(wofgv+r90yxdRLqh1vfdaTuZQMBzkwUw)
+
+mybatis:  type-aliases-package: loaa_backend.**.model
+  mapper-locations: /mapper/**/*.xml

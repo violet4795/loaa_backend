@@ -24,6 +24,8 @@ dependencies {
     // Use JUnit test framework.
     testImplementation 'junit:junit:4.13'
 
+	runtimeOnly 'mysql:mysql-connector-java'
+
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
 
@@ -36,6 +38,11 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.12'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 
+	//mybatis
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+
+	//jsaypt
+	compile "com.github.ulisesbocchio:jasypt-spring-boot-starter:1.17"
 
 
 }
