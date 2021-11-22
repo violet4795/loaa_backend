@@ -3,7 +3,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="loaa_backend.homework.mapper.HomeworkMapper">
-    <select id="getHomeworkList" resultType="Homework">
+    <select id="getHomeworkList" resultType="HomeworkModel">
         SELECT * FROM homework;
+    </select>
+
+    <select id="getCharacterList" resultType="CharacterModel">
+        SELECT * FROM loaa.`character`;
     </select>
 </mapper>

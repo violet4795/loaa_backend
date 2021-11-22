@@ -3,7 +3,7 @@ package loaa_backend.homework.model;
 import lombok.Getter;
 
 @Getter
-public class Homework {
+public class HomeworkModel {
 	String homeworkId;
 	String homeworkName;
 	String startLevel;
@@ -23,7 +23,7 @@ public class Homework {
   `cycle` INT NOT NULL COMMENT 'daily, weekly',
  *
  */
-	public Homework(String homeworkId, String homeworkName,	String startLevel, String isCommander, String limitGoldLevel,
+	public HomeworkModel(String homeworkId, String homeworkName,	String startLevel, String isCommander, String limitGoldLevel,
 			String endLevel, String cycle) {
 		this.homeworkId = homeworkId;
 		this.homeworkName = homeworkName;

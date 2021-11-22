@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import loaa_backend.homework.model.Homework;
+import loaa_backend.common.model.CharacterModel;
+import loaa_backend.homework.model.HomeworkModel;
 import loaa_backend.homework.services.HomeworkService;
 
 
@@ -23,7 +23,13 @@ public class HomeworkController {
 	}
 
 	@GetMapping("/homeworkList")
-	public List<Homework> greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+	public List<HomeworkModel> homeworkList() {
 		return service.getHomeworkList();
+	}
+
+	@GetMapping("/characterList")
+	public List<CharacterModel> characterList() {
+		List<CharacterModel> result = service.getCharacterList();
+		return result;
 	}
 }
