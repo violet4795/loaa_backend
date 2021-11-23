@@ -9,6 +9,7 @@ import loaa_backend.common.model.CharacterModel;
 import loaa_backend.homework.mapper.HomeworkMapper;
 import loaa_backend.homework.model.HomeworkModel;
 
+
 @Service
 public class HomeworkService {
 
@@ -23,6 +24,7 @@ public class HomeworkService {
 
 	public List<CharacterModel> getCharacterList(){
 		final List<CharacterModel> characterList = mapper.getCharacterList();
+
 		return characterList;
 	}
 

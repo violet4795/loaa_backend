@@ -44,6 +44,7 @@ dependencies {
 	//jsaypt
 	compile "com.github.ulisesbocchio:jasypt-spring-boot-starter:1.17"
 
+	compile "org.slf4j:slf4j-api:1.7.25"
 
 }
 
